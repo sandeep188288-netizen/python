@@ -110,9 +110,9 @@ for i in l:
 
 for i in d.values():
     if i % 2 != 0:
-        print("pair")
+        print("non pair")
 else:
-        print("non pair")'''
+        print("pair")'''
 
 #---------- LC 2341 ---------
 '''
@@ -131,7 +131,7 @@ for i in d.values():
     pairs += i//2
     leftovers += i%2
 
-return [pairs, leftovers]  '''
+print([pairs, leftovers])  '''
 
 # -----------(LC 2357)---------------
 
