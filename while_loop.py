@@ -57,10 +57,11 @@ print(check_sum(1234567))'''
 
 n = 153
 copy = n
+z = len(str(n))
 sum = 0
 while n>0:
     digit = n%10
-    pow = digit ** len(str(n))
+    pow = digit ** z
     sum += pow
     n = n//10
 

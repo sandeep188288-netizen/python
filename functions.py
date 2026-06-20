@@ -61,22 +61,26 @@
 
 # ------------------------------------------------------(STRONG NUMBER)
 
-# def strongnumber(n):
-#     copy = n
-#     fact = 1
-#     while n > 0:
-#      z = n%10
-#      fact = fact + z
-#      sum += sum+fact
-#      n = n // 10
-# for i in range(1,z+1):
-#    strongnumber(i)
+def strongnumber(n):
+    copy = n
+    total = 0
 
-# if sum == copy:
-#     print("strong number! ")    
+    while n > 0:
+        digit = n % 10
 
-# else:
-#     print("Not an strong number! ")   
+        fact = 1
+        for i in range(1, digit + 1):
+            fact *= i
+
+        total += fact
+        n = n // 10
+
+    if total == copy:
+        print("Strong Number!")
+    else:
+        print("Not a Strong Number!")
+
+strongnumber(145) 
 
 # ------------------------------------------------------
 
